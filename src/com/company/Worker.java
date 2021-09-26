@@ -14,7 +14,7 @@ public class Worker {
     public void start(){
         for (int i = 1; i < 100; i++){
             if(i == 33) {
-                errorCallback.onError("Задание " + i + " провалено");
+                errorCallback.onError("Ошибка при выполнении " + i + " задания");
             }else
                 callback.onDone("Задание " + i + " выпонено" );
         }
